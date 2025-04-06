@@ -26,5 +26,30 @@ const doubleNumber = (array) => (
 )
 
 
+const isLegal = new Promise((resolve, reject) => {
+    let age = 18;
+    if (age >= 18) {
+        resolve("Promise is resolved successfully, you are legal");    
+    } else {
+        reject("Promise is rejected, you are not legal");
+    }
+})
 
-export { newStudent, doubleNumber };
+isLegal.then((message) => {
+    console.log(message);
+}).catch((error) => {
+    console.log(error)
+}) 
+
+async function displayMessage() {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("This message will be displayed after three seconds");
+        }, 3000);
+    });
+
+    const message = await promise;
+    console.log(message)
+}
+
+export { newStudent, doubleNumber, displayMessage };

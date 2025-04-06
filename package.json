@@ -1,7 +1,7 @@
 {
   "name": "es6-review",
   "version": "1.0.0",
-  "description": "A project that implements modularity, class, asyn, promises and map features of ES6",
+  "description": "A project that implements modularity, class, async, promises and map features of ES6",
   "main": "index.js",
   "type": "module",
   "scripts": {
